@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2fd1fc0d1b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    
     <title>HomePage | Gym4You </title>
 </head>
 <body>
@@ -47,11 +47,11 @@
 
     <section class="cards-grid">
 
-        <div class="card">
-            <div class="card-image-container">
-                <img src="./Images/man-training.jpg" alt="Image">
+        <div id="card">
+            <div id="card-image-container">
+                <img id="card-image" src="./Images/man-training.jpg" alt="Image">
             </div>
-            <div class="about">
+            <div id="about">
                 <a href="#" class="title">
                     <p>
                         Gyms4you – the largest gym chain in Croatia does not stop growing
@@ -61,7 +61,59 @@
                     We have been setting the standard for all gyms in Croatia for years and we are pleased to announce the…
                 </p>
             </div>
-        </div>div
+        </div>
+
+        <div id="card">
+            <div id="card-image-container">
+                <img id="card-image" src="./Images/man-training.jpg" alt="Image">
+            </div>
+            <div id="about">
+                <a href="#" class="title">
+                    <p>
+                        Gyms4you – the largest gym chain in Croatia does not stop growing
+                    </p>
+                </a>
+                <p class="description">
+                    We have been setting the standard for all gyms in Croatia for years and we are pleased to announce the…
+                </p>
+            </div>
+        </div>
+
+        <div id="card">
+            <div id="card-image-container">
+                <img id="card-image" src="./Images/man-training.jpg" alt="Image">
+            </div>
+            <div id="about">
+                <a href="#" class="title">
+                    <p>
+                        Gyms4you – the largest gym chain in Croatia does not stop growing
+                    </p>
+                </a>
+                <p class="description">
+                    We have been setting the standard for all gyms in Croatia for years and we are pleased to announce the…
+                </p>
+            </div>
+        </div>
+
+        <div id="card">
+            <div id="card-image-container">
+                <img id="card-image" src="./Images/man-training.jpg" alt="Image">
+            </div>
+            <div id="about">
+                <a href="#" class="title">
+                    <p>
+                        Gyms4you – the largest gym chain in Croatia does not stop growing
+                    </p>
+                </a>
+                <p class="description">
+                    We have been setting the standard for all gyms in Croatia for years and we are pleased to announce the…
+                </p>
+            </div>
+        </div>
+
+        <div class="test">111</div>
+
+        <script src="script.js" ></script>
 
     </section>
 
@@ -71,17 +123,17 @@
             grid-template-columns: repeat(4, 1fr);
             max-width: 600px;
             margin: 0 auto;
+            gap: 20px;
         }
 
-        .card {
+        #card {
             min-width: 280px;
             display: flex;
             flex-direction: column;
-            transition: padding 0.5s;
             background-color: white;
         }
 
-        .card:hover {
+        #card:hover {
             padding: 10px;
         }
 
@@ -91,32 +143,32 @@
             background-color: lightblue;
         }
 
-        .card-image-container img {
+        #card-image-container img {
             width: 100%;
         }
 
-        .card .about {
+        #card #about {
             border-left: 1px solid #dbe1e7;
             padding: 50px 30px;
         }
 
-        .card .about .title {
+        #card #about .title {
             color: #80808c;
             font-size: 20px;
             font-family: 'Raleway', sans-serif;
             padding-bottom: 20px;
         }
 
-        .card .about a {
+        #card #about a {
             text-decoration: none;
         }
 
-        .card .about p {
+        #card #about p {
             padding-bottom: 20px;
             font-weight: 300;
         }
 
-        .card .about .description {
+        #card #about .description {
             font-family: 'Raleway', sans-serif;
             font-size: 14px;
             font-weight: 300;
