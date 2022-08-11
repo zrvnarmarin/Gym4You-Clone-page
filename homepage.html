@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2fd1fc0d1b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>HomePage | Gym4You </title>
+</head>
+<body>
+    
+    <header>
+        <nav class="main-navigation">
+            <div class="image-container">
+                <img src="./Images/logo.png" alt="logo">
+            </div>
+
+            <div class="links-wrapper">
+                <div class="links">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#"><i class="fa-solid fa-flag-usa"></i></a></li>
+                    </ul>
+                </div>
+                <div class="magnifier-container">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    </ul>
+                </div>
+                <div class="social-media-links">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="cards-grid">
+
+        <div class="card">
+            <div class="card-image-container">
+                <img src="./Images/man-training.jpg" alt="Image">
+            </div>
+            <div class="about">
+                <a href="#" class="title">
+                    <p>
+                        Gyms4you – the largest gym chain in Croatia does not stop growing
+                    </p>
+                </a>
+                <p class="description">
+                    We have been setting the standard for all gyms in Croatia for years and we are pleased to announce the…
+                </p>
+            </div>
+        </div>div
+
+    </section>
+
+    <style>
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .card {
+            min-width: 280px;
+            display: flex;
+            flex-direction: column;
+            transition: padding 0.5s;
+            background-color: white;
+        }
+
+        .card:hover {
+            padding: 10px;
+        }
+
+        .card-image-container {
+            width: 100%;
+            display: flex;
+            background-color: lightblue;
+        }
+
+        .card-image-container img {
+            width: 100%;
+        }
+
+        .card .about {
+            border-left: 1px solid #dbe1e7;
+            padding: 50px 30px;
+        }
+
+        .card .about .title {
+            color: #80808c;
+            font-size: 20px;
+            font-family: 'Raleway', sans-serif;
+            padding-bottom: 20px;
+        }
+
+        .card .about a {
+            text-decoration: none;
+        }
+
+        .card .about p {
+            padding-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .card .about .description {
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    </style>
+
+    
+
+
+</body>
+</html>
