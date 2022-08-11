@@ -6,7 +6,7 @@ card.addEventListener('mouseover', () => {
     cardAbout.style.borderLeft = 'none'
     card.style.border = '10px solid red'
     card.style.padding = '0'
-    card.style.transition = 'border 0.4s'
+    card.style.transition = 'border 0.3s'
 })
 
 card.addEventListener('mouseleave', () => {
