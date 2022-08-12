@@ -150,24 +150,30 @@
             <div class="image">
                 <img src="./Images/membership-card.png">
             </div>
-            <h4>YOU WILL NEVER BE LATE FOR TRAINING</h4>
-            <p>Unlike other fitness clubs in Croatia, Gyms4you clubs work non-stop, all 7 days a week, from 0 to 24 hours.</p>
+            <div class="description">
+                <h4>YOU WILL NEVER BE LATE FOR TRAINING</h4>
+                <p>Unlike other fitness clubs in Croatia, Gyms4you clubs work non-stop, all 7 days a week, from 0 to 24 hours.</p>
+            </div>
         </div>
 
         <div class="section-cards">
             <div class="image">
                 <img src="./Images/membership-card.png">
             </div>
-            <h4>YOU WILL NEVER BE LATE FOR TRAINING</h4>
-            <p>Unlike other fitness clubs in Croatia, Gyms4you clubs work non-stop, all 7 days a week, from 0 to 24 hours.</p>
+            <div class="description">
+                <h4>YOU WILL NEVER BE LATE FOR TRAINING</h4>
+                <p>Unlike other fitness clubs in Croatia, Gyms4you clubs work non-stop, all 7 days a week, from 0 to 24 hours.</p>
+            </div>
         </div>
 
         <div class="section-cards">
             <div class="image">
                 <img src="./Images/membership-card.png">
             </div>
-            <h4>YOU WILL NEVER BE LATE FOR TRAINING</h4>
-            <p>Unlike other fitness clubs in Croatia, Gyms4you clubs work non-stop, all 7 days a week, from 0 to 24 hours.</p>
+            <div class="description">
+                <h4>YOU WILL NEVER BE LATE FOR TRAINING</h4>
+                <p>Unlike other fitness clubs in Croatia, Gyms4you clubs work non-stop, all 7 days a week, from 0 to 24 hours.</p>
+            </div>
         </div>
 
     </section>
@@ -176,19 +182,73 @@
         .always-first {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            border: 1px solid black;
         }
 
         .heading-section {
             grid-column: span 3;
             justify-self: center;
+            margin-bottom: 50px;
         }
 
         .heading-section h1 {
             text-align: center;
+            color: #1f1f24;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 46px;
+            display: inline-block;
+            letter-spacing: 3.8px;
+            font-family: "Raleway", sans-serif;
         }
 
         .heading-section p {
             text-align: center;
+            font-size: 14px;
+            font-family: "Droid Serif", sans-serif;
+            font-style: italic;
+            color: #888;
+            line-height: 24px;
+            letter-spacing: 0.7px;
+        }
+
+        .section-cards {
+            display: flex;
+            flex-direction: row;
+            background-color: lightblue;
+        }
+
+        .section-cards .image {
+            background-color: lightsalmon;
+            display: flex;
+        }
+
+        .section-cards .image img{
+            width: 100%;
+        }
+
+        .description {
+            padding: 50px;
+        }
+
+        .description h4 {
+            padding: 0;
+            font-family: "Raleway", sans-serif;
+            text-transform: uppercase;
+            font-size: 13px;
+            color: #222;
+            letter-spacing: .7px;
+        }
+
+        .description p {
+            padding-top: 2px;
+            font-family: "Raleway", sans-serif;
+            letter-spacing: 3.2px;
+            text-transform: none;
+            font-style: italic;
+            font-size: 13px;
+            color: #aaa;
         }
     </style>
 
