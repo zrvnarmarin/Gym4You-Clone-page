@@ -1,16 +1,24 @@
-const cardImageContainer = document.getElementById('card-image')
-const card = document.getElementById('card')
-const cardAbout = document.getElementById('about')
+const cards = document.querySelectorAll('.card')
+const cardsAbout = document.querySelectorAll('.about')
+const cardsAboutDescriptions = document.querySelectorAll('.about .description')
 
-card.addEventListener('mouseover', () => {
-    cardAbout.style.borderLeft = 'none'
-    card.style.border = '10px solid red'
-    card.style.padding = '0'
-    card.style.transition = 'border 0.3s'
+cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+        card.style.border = '10px solid #e31e25'
+        card.style.padding = '0'
+        card.style.transition = 'border 0.4s'
+
+        cardsAboutDescriptions.forEach(description => {
+            description.style.color = 'red'
+        })
+    })
+
+    card.addEventListener('mouseleave', () => {
+        card.style.border = '0'
+
+        cardsAboutDescriptions.forEach(description => {
+            description.style.color = '#1f1f24'
+            description.style.transition = 'color'
+        })
+    })
 })
-
-card.addEventListener('mouseleave', () => {
-    cardAbout.style.borderLeft = '1px solid #dbe1e7'
-    card.style.border = '0'
-})
-
