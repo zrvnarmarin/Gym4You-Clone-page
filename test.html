@@ -5,21 +5,149 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/2fd1fc0d1b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-      
-    <div class="grid">
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, impedit.</div>
-        <div>Mollitia vero, reiciendis voluptatum ad amet cumque molestiae ullam voluptatibus!</div>
-        <div>Exercitationem quia fugiat ipsa sunt minima suscipit non facere ab?</div>
-        <div>Nostrum ad eos nisi iusto animi reprehenderit velit accusamus ex.</div>
-        <div>Ipsam et voluptate suscipit numquam pariatur ducimus eos, culpa aut?</div>
-        <div>Voluptate temporibus magni consectetur. Quas ab blanditiis distinctio labore adipisci?</div>
-        <div>Doloribus exercitationem eum explicabo, similique non error natus accusantium. Excepturi.</div>
-        <div>Placeat ab iste eveniet rerum, alias aliquam iure quas necessitatibus?</div>
-        <div>Distinctio modi obcaecati nesciunt veniam accusamus ducimus quibusdam ad nisi.</div>
-    </div>
+    
+    <nav class="navbar">
+        <div class="logo-section">
+            <div class="hamburger-button">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
 
+            <a href="#">
+                <img src="Youtube-Logo-Small.png">
+            </a>
+        </div>
+
+        <div class="input-section">
+            <input type="text">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <!-- <i class="fa-solid fa-microphone"></i> -->
+        </div>
+
+        <div class="links-section">
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-bell"></i>
+            <div class="image-part">
+                <img src="marinlogo.jpg">
+            </div>
+        </div>
+    </nav>
+    
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .links-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            color: white;
+            margin-right: 30px;
+        }
+
+        .image-part {
+            width: 30px;
+            margin-top: 6px;
+        }
+
+        .image-part img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        
+        .input-section {
+            background-color: #363636;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .input-section input {
+            background-color: #121212;
+            color: #d8d8d8;
+            border: none;
+            font-size: 1.9rem;
+            border: 0.5px solid #363636;
+            border-radius: 2px;
+            width: clamp(300px, 530px, 930px);
+        }
+        
+        .input-section input:focus {
+            outline-color: #1c62b9;
+        }
+        
+        .input-section i {
+            color: #e6e6e6;
+            padding: 5px 20px;
+        }
+        
+        .input-section i {
+            margin-right: 9px;
+            cursor: pointer;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 56px;
+
+            background-color: #252525;
+        }
+
+        .logo-section {
+            width: 120px;
+            position: relative;
+            margin-left: 30px;
+            padding-top: 5px;
+        }
+
+        .logo-section img {
+            width: 100%;
+        }
+
+        .logo-section a {
+            color: rgb(255, 255, 255);
+        }
+
+        .hamburger-button {
+            position: absolute;
+            top: 0.75rem;
+            left: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+        }
+
+        .line {
+            height: 3px;
+            width: 100%;
+            color: white;
+        }
+
+        .input-section {
+
+        }
+
+        .links-section {
+
+        }
+    </style>
 
 </body>
 </html>
