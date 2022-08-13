@@ -137,14 +137,15 @@
     </section>
 
 
+    <div class="heading-section">
+        <h1>ALWAYS FIRST. ALWAYS BETTER.</h1>
+        <p> Gyms4you fitness clubs are designed for everyone who cares about a healthy lifestyle and include exercise as <br> part of everyday life,
+            whether they are recreational, beginners or athletes.
+        </p>
+    </div>
+    
     <section class="always-first">
 
-        <div class="heading-section">
-            <h1>ALWAYS FIRST. ALWAYS BETTER.</h1>
-            <p> Gyms4you fitness clubs are designed for everyone who cares about a healthy lifestyle and include exercise as <br> part of everyday life,
-                whether they are recreational, beginners or athletes.
-            </p>
-        </div>
 
         <div class="section-cards">
             <div class="image">
@@ -161,8 +162,11 @@
                 <img src="./Images/membership-card.png">
             </div>
             <div class="description">
-                <h4>YOU WILL NEVER BE LATE FOR TRAINING</h4>
-                <p>Unlike other fitness clubs in Croatia, Gyms4you clubs work non-stop, all 7 days a week, from 0 to 24 hours.</p>
+                <h4>FREE TRIAL TRAINING AND QUALIFIED TRAINERS</h4>
+                <p>To its guests and potential new members, the Gyms4you also offers the possibility of a trial run within the working reception hours.
+                    Also, a personal trainer is available to introduce you to the equipment and the best ways to use them. Check out the appointment time
+                     at the reception of the club you are interested in
+                </p>
             </div>
         </div>
 
@@ -171,8 +175,11 @@
                 <img src="./Images/membership-card.png">
             </div>
             <div class="description">
-                <h4>YOU WILL NEVER BE LATE FOR TRAINING</h4>
-                <p>Unlike other fitness clubs in Croatia, Gyms4you clubs work non-stop, all 7 days a week, from 0 to 24 hours.</p>
+                <h4>1 MEMBERSHIP CARD - ALL LOCATIONS</h4>
+                <p> Gyms4you is a unique chain in wich you enter by scanning a fingerprint, and each member receives a personal - 
+                    unique membership card.
+                    To be even more accessible to our members - each ID is valid at all locations.
+                </p>
             </div>
         </div>
 
@@ -180,76 +187,85 @@
 
     <style>
         .always-first {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
+            background-color: rgb(238, 238, 238);
             border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            column-gap: 30px;
+            row-gap: 30px;
         }
 
         .heading-section {
-            grid-column: span 3;
-            justify-self: center;
-            margin-bottom: 50px;
+            border: 1px solid black;
+            text-align: center;
         }
 
         .heading-section h1 {
-            text-align: center;
-            color: #1f1f24;
-            text-transform: uppercase;
+            font-family: "Raleway", sans-serif;
             font-weight: 900;
             font-size: 46px;
-            display: inline-block;
-            letter-spacing: 3.8px;
-            font-family: "Raleway", sans-serif;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: #1f1f24;
         }
 
         .heading-section p {
-            text-align: center;
-            font-size: 14px;
             font-family: "Droid Serif", sans-serif;
             font-style: italic;
+            font-size: 14px;
             color: #888;
             line-height: 24px;
             letter-spacing: 0.7px;
         }
 
         .section-cards {
+            border: 1px solid black;
             display: flex;
             flex-direction: row;
-            background-color: lightblue;
+            flex: 1 1 80%;
+            padding-left: 10px;
+            background-color: lightgray;
+            overflow: hidden;
         }
 
         .section-cards .image {
-            background-color: lightsalmon;
             display: flex;
         }
 
-        .section-cards .image img{
+        .section-cards .image img {
+            object-fit: contain;
             width: 100%;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
         }
 
-        .description {
-            padding: 50px;
+        .section-cards .description {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: lightblue;
         }
 
-        .description h4 {
-            padding: 0;
+        .section-cards .description h4 {
             font-family: "Raleway", sans-serif;
-            text-transform: uppercase;
             font-size: 13px;
-            color: #222;
             letter-spacing: .7px;
+            text-transform: uppercase;
+            color: #222;
         }
 
-        .description p {
-            padding-top: 2px;
+        .section-cards .description p {
             font-family: "Raleway", sans-serif;
+            padding-top: 2px;
             letter-spacing: 3.2px;
             text-transform: none;
             font-style: italic;
             font-size: 13px;
+            line-height: 24px;
             color: #aaa;
         }
+
     </style>
 
     
