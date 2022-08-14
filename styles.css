@@ -219,3 +219,84 @@ i {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* Always first, always better section */
+.always-first {
+    background-color: rgb(238, 238, 238);
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.heading-section {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.heading-section h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 46px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #1f1f24;
+}
+
+.heading-section p {
+    font-family: "Droid Serif", sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #888;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+}
+
+.section-cards {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 60%;
+    padding-left: 10px;
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+.section-cards .image {
+    display: flex;
+}
+
+.section-cards .image img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.section-cards .description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: lightblue;
+}
+
+.section-cards .description h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.section-cards .description p {
+    font-family: "Raleway", sans-serif;
+    padding-top: 2px;
+    letter-spacing: 3.2px;
+    text-transform: none;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 24px;
+    color: #aaa;
+}
