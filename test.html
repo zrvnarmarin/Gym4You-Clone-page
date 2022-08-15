@@ -333,6 +333,7 @@
 
         .footer-heading {
             grid-column: span 4;
+            padding-left: 40px;
             background-color: lightcoral;
         }
 
@@ -346,7 +347,7 @@
 
         .lists ul {
             list-style: none;
-            
+
         }
 
         .social-media-icons-and-search-bar {
@@ -354,6 +355,8 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            flex-wrap: wrap;
+            padding-left: 40px;
 
             background-color: lightgoldenrodyellow;
         }
@@ -365,6 +368,8 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            flex-wrap: wrap;
+            padding-left: 40px;
         }
 
         .copyright div:nth-child(1),
@@ -378,15 +383,22 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
         }
 
         .site-links ul {
             display: flex;
             flex-direction: row;
             gap: 20px;
-            justify-content: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
             margin: 0;
+            list-style: none;
+        }
+
+        .site-links ul li {
+            flex-grow: 20;
         }
 
 
