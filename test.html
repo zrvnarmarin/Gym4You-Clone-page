@@ -217,63 +217,103 @@
    </div>
 
    <footer>
-        <div class="wrapper">
-            <div class="footer-heading">
-                <h1>
-                    Novartis
-                </h1>
-            </div>
+        <div class="footer-heading">
+            <h1>
+                Novartis
+            </h1>
+        </div>
 
-            <div class="links">
-                <div class="first-list">
-                    <ul>
-                        <li>
-                            <h3>Navigate Novartis</h3>
-                        </li>
-                        <li><a href="">Patiens and caregivers</a></li>
-                        <li><a href="">Healthcare Professionals</a></li>
-                        <li><a href="">Researchers</a></li>
-                        <li><a href="">Job Seekers</a></li>
-                        <li><a href="">Journalists</a></li>
-                        <li><a href="">Investors</a></li>
-                        <li><a href="">Partners</a></li>
-                        <li><a href="">Suppliers</a></li>
-                    </ul>
-                </div>
-                <div class="second-list">
-                    <ul>
-                        <li>
-                            <h3>Topics</h3>
-                        </li>
-                        <li><a href="">Clinical Trials</a></li>
-                        <li><a href="">COVID-19 Info Center</a></li>
-                        <li><a href="">ESG</a></li>
-                    </ul>
-                </div>
-                <div class="third-list">
-                    <ul>
-                        <li>
-                            <h3>Explorer</h3>
-                        </li>
-                        <li><a href="">Stories</a></li>
-                        <li><a href="">Diseases</a></li>
-                        <li><a href="">Locations</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Novartis Pipeline</a></li>
-                    </ul>
-                </div>
-                <div class="fourth-list">
-                    <ul>
-                        <li>
-                            <h3>Novartis Companies</h3>
-                        </li>
-                        <li><a href="">Sandoz</a></li>
-                        <li><a href="">Advanced Meidicine Accelerator</a></li>
-                        <li><a href="">Gyroscope Therapeutics</a></li>
-                    </ul>
-                </div>
+        <div class="lists">
+            <div class="first-list">
+                <ul>
+                    <li>
+                        <h3>Navigate Novartis</h3>
+                    </li>
+                    <li><a href="">Patiens and caregivers</a></li>
+                    <li><a href="">Healthcare Professionals</a></li>
+                    <li><a href="">Researchers</a></li>
+                    <li><a href="">Job Seekers</a></li>
+                    <li><a href="">Journalists</a></li>
+                    <li><a href="">Investors</a></li>
+                    <li><a href="">Partners</a></li>
+                    <li><a href="">Suppliers</a></li>
+                </ul>
+            </div>
+            <div class="second-list">
+                <ul>
+                    <li>
+                        <h3>Topics</h3>
+                    </li>
+                    <li><a href="">Clinical Trials</a></li>
+                    <li><a href="">COVID-19 Info Center</a></li>
+                    <li><a href="">ESG</a></li>
+                </ul>
+            </div>
+            <div class="third-list">
+                <ul>
+                    <li>
+                        <h3>Explorer</h3>
+                    </li>
+                    <li><a href="">Stories</a></li>
+                    <li><a href="">Diseases</a></li>
+                    <li><a href="">Locations</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Novartis Pipeline</a></li>
+                </ul>
+            </div>
+            <div class="fourth-list">
+                <ul>
+                    <li>
+                        <h3>Novartis Companies</h3>
+                    </li>
+                    <li><a href="">Sandoz</a></li>
+                    <li><a href="">Advanced Meidicine Accelerator</a></li>
+                    <li><a href="">Gyroscope Therapeutics</a></li>
+                </ul>
             </div>
         </div>
+
+        <div class="social-media-icons-and-search-bar">
+            <div class="social-media-icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="search-bar">
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div>
+                <i class="fa-solid fa-copyright"></i>
+                <div>2022 Novartis AG</div>
+            </div>
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <div>Novartis Site Directory</div>
+            </div>
+        </div>
+
+        <div class="site-links">
+            <div>
+                <ul>
+                    <li>nesto</li>
+                    <li>nesto</li>
+                    <li>nesto</li>
+                    <li>nesto</li>
+                    <li>nesto</li>
+                    <li>nesto</li>
+                    <li>nesto</li>
+                </ul>
+            </div>
+            <div>
+                This site is intended for a global audience
+            </div>
+        </div>
+            
    </footer>
 
    <style>
@@ -284,78 +324,71 @@
         }
 
         footer {
-            background-color: #d3b8b8;
-        }
-
-        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
             max-width: 1200px;
-            background-color: rgb(212, 212, 212);
             margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            border: 1px solid black;
         }
 
         .footer-heading {
-            margin-bottom: 40px;
-            color: #221f1f;
-            font-size: 22px;
-            line-height: 36px;
-            font-weight: 700;
+            grid-column: span 4;
+            background-color: lightcoral;
         }
 
-        footer .links {
+        .lists {
+            grid-column: span 4;
+            background-color: lightblue;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+        }
+
+        .lists ul {
+            list-style: none;
+            
+        }
+
+        .social-media-icons-and-search-bar {
+            grid-column: span 4;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            background-color: lightgoldenrodyellow;
+        }
+
+        .copyright {
+            grid-column: span 4;
+            background-color: lightpink;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .copyright div:nth-child(1),
+        .copyright div:nth-child(2) {
             display: flex;
             flex-direction: row;
         }
 
-        footer ul {
-            list-style: none;
+        .site-links {
+            grid-column: span 4;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .links h3 {
-            margin: 5px 0;
-        }
-
-        .links li a {
-            padding-left: 0;
-            padding-right: 0;
-            font-size: 14px;
-            color: #221f1f;
-            box-shadow: 0 0.0625rem 0 0 #c7c7c7;
-            text-decoration: none;
-            line-height: 20px;
-            margin-bottom: 5px;
-        }
-
-        .links .first-list {
-            background-color: rgb(145, 56, 56);
-            display: flex;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
         }
 
-        .links .second-list {
-            background-color: red;
-            padding: 10px 20px;
+        .site-links ul {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            margin: 0;
         }
 
-        .links .third-list {
-            background-color: rgb(148, 31, 31);
-            padding: 10px 20px;
-        }
-
-        .links .fourth-list {
-            background-color: rgb(63, 55, 55);
-            padding: 10px 20px;
-        }
-
-        
 
         
    </style>
